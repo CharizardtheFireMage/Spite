@@ -3,7 +3,6 @@
 const uuid = require('uuid');
 const dualcards = require('./yugi-data.js');
 let color = require('../config/color');
-let rankLadder = require('../rank-ladder');
 
 const colors = {
 	GhostRare: '#D82A2A',
