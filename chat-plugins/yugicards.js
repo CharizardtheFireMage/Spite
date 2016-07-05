@@ -16,16 +16,16 @@ const colors = {
 };
 
 const ygoshop = [
-	['Basic Pack', 'Get three duelcards from across all decks', 5],
-	['Premium Pack', 'Get three duelcards with a higher chance of rares.', 8],
-	['Starter Deck: Yugi', 'Get three duelcards from Yugis Starter Deck.', 8],
-	['Starter Deck: Joey', 'Get three duelcards from Joeys Starter Deck.', 8],
-	['Starter Deck: Kaiba', 'Get three duelcards from Kaibas Starter Deck.', 8],
-	['Starter Deck: Pegasus', 'Get three duelcards from Pegasus Starter Deck.', 8],
-	['Dark Legion', 'Get three duelcards from the the Dark Legions Structure Deck.', 10],
-	['Emperor of Darkness', 'Get three duelcards from the Emperor of Darkness Structure Deck.', 10],
-	['Master of Pendulum', 'Get three duelcards from the Master of Pendulum Structure Deck.', 10],
-	['Absolute Powerforce', 'Get three duelcards from the Absolute Powerful Deck.', 12],
+	['Basic Pack', 'Get three duelcards from across all decks', 20],
+	['Premium Pack', 'Get three duelcards with a higher chance of rares.', 35],
+	['Starter Deck: Yugi', 'Get three duelcards from Yugis Starter Deck.', 20],
+	['Starter Deck: Joey', 'Get three duelcards from Joeys Starter Deck.', 20],
+	['Starter Deck: Kaiba', 'Get three duelcards from Kaibas Starter Deck.', 20],
+	['Starter Deck: Pegasus', 'Get three duelcards from Pegasus Starter Deck.', 20],
+	['Dark Legion', 'Get three duelcards from the the Dark Legions Structure Deck.', 40],
+	['Emperor of Darkness', 'Get three duelcards from the Emperor of Darkness Structure Deck.', 40],
+	['Master of Pendulum', 'Get three duelcards from the Master of Pendulum Structure Deck.', 40],
+	['Absolute Powerforce', 'Get three duelcards from the Absolute Powerful Deck.', 50],
 ];
 let ygoShop = ['Starter Deck: Yugi', 'Starter Deck: Joey', 'Starter Deck: Kaiba', 'Starter Deck: Pegasus', 'Dark Legion', 'Emperor of Darkness', 'Master of Pendulum', 'Absolute Powerforce', 'Basic Pack', 'Premium Pack'];
 const dualcardRarity = ['Common', 'Rare', 'SuperRare', 'UltraRare', 'SecretRare', 'ShatterfoilRare', 'UltimateRare', 'GhostRare'];
