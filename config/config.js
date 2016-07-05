@@ -1,7 +1,7 @@
 'use strict';
 
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
+exports.port = 8080;
 
 // proxyip - proxy IPs with trusted X-Forwarded-For headers
 //   This can be either false (meaning not to trust any proxies) or an array
@@ -68,6 +68,7 @@ exports.loginserverpublickey = "-----BEGIN RSA PUBLIC KEY-----\n" +
 //   Greek or Cyrillic.
 exports.disablebasicnamefilter = false;
 
+exports.maxAutoJoinRooms = 8;
 // report joins and leaves - shows messages like "<USERNAME> joined"
 //   Join and leave messages are small and consolidated, so there will never
 //   be more than one line of messages.
@@ -268,6 +269,7 @@ exports.grouplist = [
 		id: "admin",
 		name: "Administrator",
 		root: true,
+		upperstaff: true,
 		globalonly: true,
 	},
 	{
@@ -278,6 +280,7 @@ exports.grouplist = [
 		jurisdiction: '@u',
 		promote: 'u',
 		roomowner: true,
+		upperstaff: true,
 		roommod: true,
 		roomdriver: true,
 		forcewin: true,

