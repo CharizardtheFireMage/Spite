@@ -123,6 +123,45 @@ function getShopDisplay(shop) {
 	return display;
 }
 
+function rankLadder(title, type, array, prop, group) { //Will clean up someday (tm)
+	let groupHeader = group || 'Username';
+	const ladderTitle = '<center><h4><u>' + title + '</u></h4></center>';
+	const thStyle = 'class="rankladder-headers default-td" style="background: -moz-linear-gradient(#576468, #323A3C); background: -webkit-linear-gradient(#576468, #323A3C); background: -o-linear-gradient(#576468, #323A3C); background: linear-gradient(#576468, #323A3C); box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255, 255, 255, 0.7) inset;"';
+	const tableTop = '<div style="max-height: 310px; overflow-y: scroll;">' +
+		'<table style="width: 100%; border-collapse: collapse;">' +
+		'<tr>' +
+			'<th ' + thStyle + '>Rank</th>' +
+			'<th ' + thStyle + '>' + groupHeader + '</th>' +
+			'<th ' + thStyle + '>' + type + '</th>' +
+		'</tr>';
+	const tableBottom = '</table></div>';
+	const tdStyle = 'class="rankladder-tds default-td" style="box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255, 255, 255, 0.7) inset;"';
+	const first = 'class="first default-td important" style="box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255, 255, 255, 0.7) inset;"';
+	const second = 'class="second default-td important" style="box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255, 255, 255, 0.7) inset;"';
+	const third = 'class="third default-td important" style="box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3) inset, 1px 1px 1px rgba(255, 255, 255, 0.7) inset;"';
+	let midColumn;
+	const length = array.length;
+
+	let tableRows = '';
+
+	for (let i = 0; i < length; i++) {
+		if (i === 0) {
+			midColumn = '</td><td ' + first + '>';
+			tableRows += '<tr><td ' + first + '>' + (i + 1) + midColumn + array[i].name + midColumn + array[i][prop] + '</td></tr>';
+		} else if (i === 1) {
+			midColumn = '</td><td ' + second + '>';
+			tableRows += '<tr><td ' + second + '>' + (i + 1) + midColumn + array[i].name + midColumn + array[i][prop] + '</td></tr>';
+		} else if (i === 2) {
+			midColumn = '</td><td ' + third + '>';
+			tableRows += '<tr><td ' + third + '>' + (i + 1) + midColumn + array[i].name + midColumn + array[i][prop] + '</td></tr>';
+		} else {
+			midColumn = '</td><td ' + tdStyle + '>';
+			tableRows += '<tr><td ' + tdStyle + '>' + (i + 1) + midColumn + array[i].name + midColumn + array[i][prop] + '</td></tr>';
+		}
+	}
+	return ladderTitle + tableTop + tableRows + tableBottom;
+}
+
 function toTitleCase(str) {
 	return str.replace(/(\w\S*)/g, function (txt) {
 		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -150,15 +189,15 @@ exports.commands = {
 		if (!target) return this.sendReply("/buybooster - Buys a pack from the pack shop. Alias: /buyboosters");
 		let self = this;
 		let ygoId = toId(target);
-		let amount = Db('money').get(user.userid, 0);
+		let amount = Db('ticket').get(user.userid, 0);
 		if (cleanShop.indexOf(ygoId) < 0) return self.sendReply("This is not a valid pack. Use /ygoshop to see all packs.");
 		let shopIndex = cleanShop.indexOf(toId(target));
 		let cost = ygoshop[shopIndex][2];
-		if (cost > amount) return self.sendReply("You need " + (cost - amount) + " more money to buy this pack.");
-		let total = Db('money').set(user.userid, amount - cost).get(user.userid);
+		if (cost > amount) return self.sendReply("You need " + (cost - amount) + " more tickets to buy this pack.");
+		let total = Db('ticket').set(user.userid, amount - cost).get(user.userid);
 		let ygo = toId(target);
 		self.sendReply('|raw|You have bought ' + target + ' pack for ' + cost +
-			' money. Use <button name="send" value="/openbooster ' +
+			' ticket. Use <button name="send" value="/openbooster ' +
 			ygo + '"><b>/openbooster ' + ygo + '</b></button> to open your pack.');
 		self.sendReply("You have until the server restarts to open your pack.");
 		if (!userYgos[user.userid]) userYgos[user.userid] = [];
