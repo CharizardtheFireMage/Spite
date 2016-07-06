@@ -1,3 +1,8 @@
+li[id$='-userlist-user-wando'] strong, li[id$='-userlist-user-wando'] span, .chat.chatmessage-wando span, li[id$='-userlist-user-wando'] em[style], .chat.chatmessage-wando.mine strong{
+ 
+    color: #e60000 !important;
+ 
+}
 #lobby-userlist-user-kokonoesan, #staff-userlist-user-kokonoesan,  #shadowbanroom-userlist-user-kokonoesan {
     background:url("http://orig00.deviantart.net/71cd/f/2009/350/0/f/sleeping_glaceon_by_lionheartcartoon.gif") no-repeat right
 }
