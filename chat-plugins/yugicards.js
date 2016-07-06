@@ -442,7 +442,7 @@ exports.commands = {
 			user.popup(definePopup + generalMenu + categoryMenu + scrollable + dualcardDisplay + divEnd);
 			break;
 		case 'duelcard':
-			let backButton = '<button name="send" value="/duelcardsearch ' + user.lastDualcardSearch + '" style="background-color:aliceblue;height:30px;width:35">&lt;&nbsp;Back</button><br /><br />';
+			let backButton = '<button name="send" value="/duelsearch ' + user.lastDualcardSearch + '" style="background-color:aliceblue;height:30px;width:35">&lt;&nbsp;Back</button><br /><br />';
 			if (!parts[0] || !(toId(parts[0]) in dualcards)) {
 				return user.popup(definePopup + backButton + '<center><font color="red"><b>Invalid duelcard</b></font></center>');
 			}
@@ -867,7 +867,7 @@ exports.commands = {
 			"<b>/deck</b> - Shows a display of all duelcards that you have.<br>" +
 			"<b>/duelcard</b> - Shows data and information on any specifc duelcard.<br>" +
 			"<b>/duelcardladder</b> - Shows the leaderboard of the users with the most duelcard Lifepoints.<br>" +
-			"<b>/duelcardsearch</b> - Opens a window allowing you to search through all the duelcards.<br>" +
+			"<b>/duelsearch</b> - Opens a window allowing you to search through all the duelcards.<br>" +
 			"<b>/tradeduelcard</b> - /swap [user\'s duelcard], [targetUser], [targetUser\'s duelcard] - starts a new trade request.<br>" +
 			"<b>/viewduelcardtrades</b> - View your current pending trade requests.<br>" +
 			"<b>/transferduelcard</b> - /transferduelcard [targetUser], [duelcard] - transfers a duelcard to the target user.<br>" +
