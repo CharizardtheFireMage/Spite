@@ -11,7 +11,7 @@
     background:url("http://i.imgur.com/pNgmXPF.png") no-repeat right
 }
 #lobby-userlist-user-wando, #staff-userlist-user-wando,  #shadowbanroom-userlist-user-wando {
-    background:url("http://i.imgur.com/JGn6i80.gif") no-repeat right
+    background:url("https://s31.postimg.org/fh40wl99n/ezgif_4009171450.gif") no-repeat right
 }
 
 .pm-window-kokonoesan h3:hover,.pm-window-kokonoesan.focused h3,.pm-window-kokonoesan.focused h3:hover {
@@ -53,7 +53,7 @@
       color:#000
 }
 
-.pm-window-wndo h3 {
+.pm-window-wando h3 {
   background: rgba(153, 204, 255, 0.8) url("http://pokedream.com/pokedex/images/mini/007.gif") no-repeat !important;
   background-position: 225px -8px !important;
   color: #FF8000 !important;
@@ -61,7 +61,7 @@
   border-color: #FF8000 !important;
 }
 
-.pm-window-wndo  h3:hover, .pm-window-wndo.focused h3, .pm-window-wndo.focused h3:hover {
+.pm-window-wando  h3:hover, .pm-window-wando.focused h3, .pm-window-wando.focused h3:hover {
   background: rgba(255, 128, 0, 0.9) url("http://pokedream.com/pokedex/images/mini/007.gif") no-repeat !important;
   background-position: 225px -8px !important;
   color: #9CF !important;
@@ -69,43 +69,43 @@
   border-color: #9CF !important;
 }
 
-.pm-window-wndo h3 small, .pm-window-wndo h3 .minimizebutton, .pm-window-wndo h3 .closebutton, .pm-window-wndo h3:hover .minimizebutton {
+.pm-window-wando h3 small, .pm-window-wando h3 .minimizebutton, .pm-window-wando h3 .closebutton, .pm-window-wando h3:hover .minimizebutton {
   color: #F30 !important;
 }
 
-.pm-window-wndo h3 .closebutton:hover + .minimizebutton.minimizebutton {
+.pm-window-wando h3 .closebutton:hover + .minimizebutton.minimizebutton {
   color: #F30 !important;
 }
 
-.pm-window-wndo h3 .closebutton:hover {
+.pm-window-wando h3 .closebutton:hover {
   color: #F3C !important;
 }
 
-.pm-window-wndo h3 .minimizebutton:hover {
+.pm-window-wando h3 .minimizebutton:hover {
   color: #F3C !important;
 }
 
-.pm-window-wndo .pm-log, .pm-window-wndo.focused .pm-log {
+.pm-window-wando .pm-log, .pm-window-wando.focused .pm-log {
   background: rgba(255, 240, 236, 0.95) url("http://files.gamebanana.com/img/ico/sprays/darkmagiciangirllf6_copy.png") right no-repeat !important;
   border-color: #0F0 !important;
 }
 
-.pm-window-wndo .pm-log .chat small {
+.pm-window-wando .pm-log .chat small {
   color: #D90 !important;
 }
 
-.pm-window-wndo .pm-log-add, .pm-window-wndo.focused .pm-log-add {
+.pm-window-wando .pm-log-add, .pm-window-wando.focused .pm-log-add {
   background: #F63 !important;
   border-color: #0F0 !important;
 }
 
-.pm-window-wndo .pm-log-add .textbox {
+.pm-window-wando .pm-log-add .textbox {
   border-color: #0F0 !important;
   background: rgba(255, 102, 153, 0.9) !important;
   color: #000 !important;
 }
 
-.pm-window-wndo h3.pm-notifying {
+.pm-window-wando h3.pm-notifying {
   border-color: #0F0 !important;
   background: #000 url("http://pokedream.com/pokedex/images/mini/007.gif") no-repeat !important;
   background-position: 225px -8px !important;
@@ -114,7 +114,7 @@
   font-style: italic !important;
 }
 
-.pm-window-wndo h3.pm-notifying:hover {
+.pm-window-wando h3.pm-notifying:hover {
   border-color: #0F0 !important;
   background: #FFF url("http://pokedream.com/pokedex/images/mini/007.gif") no-repeat !important;
   background-position: 225px -8px !important;
@@ -123,30 +123,30 @@
   font-style: italic !important;
 }
 
-.pm-window-wndo .challenge {
+.pm-window-wando .challenge {
   background: url("http://findicons.com/files/icons/2597/the_clean_desk/40/heart.png") !important;
   color: #000 !important;
   border-color: #0F0 !important;
 }
 
-.pm-window-wndo .challenge .select, .pm-window-wndo .challenge .buttonbar button {
+.pm-window-wando .challenge .select, .pm-window-wando .challenge .buttonbar button {
   background: #F63 !important;
   border-color: #0F0 !important;
   color: #000 !important;
   text-shadow: 0px -1px 0px #BF5664 !important;
 }
 
-.pm-window-wndo .challenge .select:hover, .pm-window-wndo .challenge .buttonbar button:hover {
+.pm-window-wando .challenge .select:hover, .pm-window-wando .challenge .buttonbar button:hover {
   background: #F9D !important;
   border-color: #0F0 !important;
 } 
 
-.pm-window-wndo .challenge .select:disabled {
+.pm-window-wando .challenge .select:disabled {
   background: rgba(255, 51, 0, 0.6) !important;
   border-color: #000 !important;
 }
 
-.pm-window-wndo .challenge .teamselect:disabled strong {
+.pm-window-wando .challenge .teamselect:disabled strong {
   color: #F9D !important;
   text-shadow: none !important;
 }
