@@ -151,6 +151,104 @@
   text-shadow: none !important;
 }
 
+.pm-window-opv h3 {
+  background: rgba(255, 102, 204, 0.8) url("http://pokedream.com/pokedex/images/mini/155.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #fff !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  border-color: #FF99DD !important;
+}
+
+.pm-window-opv  h3:hover, .pm-window-opv.focused h3, .pm-window-opv.focused h3:hover {
+  background: rgba(255, 153, 221, 0.8) url("http://pokedream.com/pokedex/images/mini/155.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #fff !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  border-color: #FF66CC !important;
+}
+
+.pm-window-opv h3 small, .pm-window-opv h3 .minimizebutton, .pm-window-opv h3 .closebutton, .pm-window-opv h3:hover .minimizebutton {
+  color: #FFF !important;
+}
+
+.pm-window-opv h3 .closebutton:hover + .minimizebutton.minimizebutton {
+  color: #F30 !important;
+}
+
+.pm-window-opv h3 .closebutton:hover {
+  color: #F3C !important;
+}
+
+.pm-window-opv h3 .minimizebutton:hover {
+  color: #F3C !important;
+}
+
+.pm-window-opv .pm-log, .pm-window-opv.focused .pm-log {
+  background: rgba(255, 240, 236, 0.95) url("http://i.imgur.com/B9ZLHsy.png") right no-repeat !important;
+  border-color: #FF66CC !important;
+}
+
+.pm-window-opv .pm-log .chat small {
+  color: rgba(255, 153, 221, 0.8) !important;
+}
+
+.pm-window-opv .pm-log-add, .pm-window-opv.focused .pm-log-add {
+  background: rgba(255, 153, 221, 0.8) !important;
+  border-color: #FF66CC !important;
+}
+
+.pm-window-opv .pm-log-add .textbox {
+  border-color: #FF66CC !important;
+  background: #ffccff !important;
+  color: #000 !important;
+}
+
+.pm-window-opv h3.pm-notifying {
+  border-color: #0F0 !important;
+  background: #fff url("http://pokedream.com/pokedex/images/mini/625.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #f9c !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  font-style: italic !important;
+}
+
+.pm-window-opv h3.pm-notifying:hover {
+  border-color: #0F0 !important;
+  background: #FFF url("http://pokedream.com/pokedex/images/mini/625.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #F9C !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  font-style: italic !important;
+}
+
+.pm-window-opv .challenge {
+  background: url("https://fanart.tv/fanart/tv/150471/clearlogo/AngelBeats-150471-2.png") no-repeat center !important;
+  color: #000 !important;
+  border-color: #FF66CC !important;
+}
+
+.pm-window-opv .challenge .select, .pm-window-opv .challenge .buttonbar button {
+  background: rgba(255, 153, 221, 0.8) !important;
+  border-color: #FF66CC !important;
+  color: #000 !important;
+  text-shadow: 0px -1px 0px #BF5664 !important;
+}
+
+.pm-window-opv .challenge .select:hover, .pm-window-opv .challenge .buttonbar button:hover {
+  background: rgba(255, 153, 221, 0.8) !important;
+  border-color: #FF66CC !important;
+} 
+
+.pm-window-opv .challenge .select:disabled {
+  background: rgba(255, 153, 221, 0.6) !important;
+  border-color: #FF66CC !important;
+}
+
+.pm-window-opv .challenge .teamselect:disabled strong {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+
 /**************
   * GENERAL CSS *
   **************/
