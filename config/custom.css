@@ -1335,10 +1335,4 @@
   /******************
    * Dark Mode End *
    ******************/
-   
-   li[id$='-userlist-user-wando'] strong, li[id$='-userlist-user-wando'] span, .chat.chatmessage-wando span, li[id$='-userlist-user-wando'] em[style], .chat.chatmessage-wando.mine strong{
- 
-    color: #e60000 !important;
- 
-}
 
