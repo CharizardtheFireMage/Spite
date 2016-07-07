@@ -30,8 +30,8 @@ const shop = [
 	['XY-Ancient Origins', 'Get three cards from the Ancient Origins pack released in the Pokemon XY set.', 10],
 	['XY-Generations', 'Get three cards from the Generations pack released in the Pokemon XY set.', 10],
 	['XY-Fates Collide', 'Get three cards from the Fates Collide pack released in the Pokemon XY set.', 10],
-	['XY-BREAKpoint', 'Get three cards from the BREAKpoint pack released in the Pokemon XY set.', 10]
-	['XY-Promo', 'Get three cards from the BREAKpoint pack released in the Pokemon XY set.', 20]
+	['XY-BREAKpoint', 'Get three cards from the BREAKpoint pack released in the Pokemon XY set.', 10],
+	['XY-Promo', 'Get three cards from the BREAKpoint pack released in the Pokemon XY set.', 20],
 	['BW-Plasma Blast', 'Get three cards from the Plasma Blast pack released in the Pokemon BW set.', 10]
 ];
 let packShop = ['XY-Base', 'XY-Flashfire', 'XY-Furious Fists', 'XY-Phantom Forces', 'XY-Primal Clash', 'XY-Roaring Skies', 'XY-Ancient Origins', 'XY-Generations', 'XY-Fates Collide', 'XY-BREAKpoint', 'XY-Promo', 'BW-Plasma Blast', 'Double Crisis', 'Water', 'Fire', 'Fighting', 'Fairy', 'Dragon', 'Colorless', 'Psychic', 'Lightning', 'Darkness', 'Grass', 'OU-Pack', 'UU-Pack', 'Uber-Pack', 'PU-Pack', 'NU-Pack', 'RU-Pack', 'LC-Pack', 'BL-Pack', 'BL2-Pack', 'BL3-Pack', 'Gen1', 'Gen2', 'Gen3', 'Gen4', 'Gen5', 'Gen6', 'Metal', 'Trainer', 'Supporter', 'Item', 'Stadium', 'EX-Pack', 'Legendary', 'Full', 'Event'];
