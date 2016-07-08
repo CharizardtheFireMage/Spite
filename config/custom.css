@@ -14,43 +14,102 @@
     background:url("https://s31.postimg.org/fh40wl99n/ezgif_4009171450.gif") no-repeat right
 }
 
-.pm-window-kokonoesan h3:hover,.pm-window-kokonoesan.focused h3,.pm-window-kokonoesan.focused h3:hover {
-      background:#f472c1 url("http://www.serebii.net/pokedex-dp/icon/419.gif") no-repeat;
-      background-position:225px -8px;
-      color:#f472c1;
-      border-color:#f472c1
+.pm-window-kokonoesan h3 {
+  background: rgba(153, 204, 255, 0.8) url("http://orig00.deviantart.net/71cd/f/2009/350/0/f/sleeping_glaceon_by_lionheartcartoon.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #C0C0C0 !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  border-color: #C0C0C0 !important;
 }
 
-.pm-window-kokonoesan h3 small,.pm-window-kokonoesan h3 .minimizebutton,.pm-window-kokonoesan h3 .closebutton,.pm-window-kokonoesan h3:hover .minimizebutton {
-      color:#f472c1
+.pm-window-kokonoesan  h3:hover, .pm-window-kokonoesan.focused h3, .pm-window-kokonoesan.focused h3:hover {
+  background: rgba(255, 128, 0, 0.9) url("http://orig00.deviantart.net/71cd/f/2009/350/0/f/sleeping_glaceon_by_lionheartcartoon.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #FFFFFF !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  border-color: #FFFFFF !important;
 }
 
-.pm-window-kokonoesan h3 .closebutton:hover+.minimizebutton.minimizebutton {
-      color:#f472c1
+.pm-window-kokonoesan h3 small, .pm-window-kokonoesan h3 .minimizebutton, .pm-window-kokonoesan h3 .closebutton, .pm-window-kokonoesan h3:hover .minimizebutton {
+  color: #ADD8E6 !important;
+}
+
+.pm-window-kokonoesan h3 .closebutton:hover + .minimizebutton.minimizebutton {
+  color: #ADD8E6 !important;
 }
 
 .pm-window-kokonoesan h3 .closebutton:hover {
-      color:#f472c1
+  color: #C0C0C0 !important;
 }
 
 .pm-window-kokonoesan h3 .minimizebutton:hover {
-      color:#f472c1
+  color: #C0C0C0 !important;
 }
 
-.pm-window-kokonoesan .pm-log,.pm-window-kokonoesan.focused .pm-log {
-      background:rgba(236,255,251,0.9) url("http://i.imgur.com/Ix37Qfk.png") no-repeat right top;
-      border-color:#f472c1
+.pm-window-kokonoesan .pm-log, .pm-window-kokonoesan.focused .pm-log {
+  background: rgba(255, 240, 236, 0.95) url("http://orig06.deviantart.net/dca2/f/2013/015/e/d/glaceon__chibi__by_spiritofhearts-d5rl0d6.png") right no-repeat !important;
+  border-color: #0F0 !important;
 }
 
-.pm-window-kokonoesan .pm-log-add,.pm-window-kokonoesan.focused .pm-log-add {
-      background:#f472c1;
-      border-color:#f472c1
+.pm-window-kokonoesan .pm-log .chat small {
+  color: #D90 !important;
 }
 
-.pm-window-kokonoesan .pm-log-add .textbox{
-      border-color:#f472c1;
-      background:rgba(243,255,253,0.95);
-      color:#000
+.pm-window-kokonoesan .pm-log-add, .pm-window-kokonoesan.focused .pm-log-add {
+  background: #F63 !important;
+  border-color: #0F0 !important;
+}
+
+.pm-window-kokonoesan .pm-log-add .textbox {
+  border-color: #0F0 !important;
+  background: rgba(255, 102, 153, 0.9) !important;
+  color: #000 !important;
+}
+
+.pm-window-kokonoesan h3.pm-notifying {
+  border-color: #0F0 !important;
+  background: #000 url("http://orig00.deviantart.net/71cd/f/2009/350/0/f/sleeping_glaceon_by_lionheartcartoon.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #53FF1A !important;
+  text-shadow: 0px 0px 2px #FFF !important;
+  font-style: italic !important;
+}
+
+.pm-window-kokonoesan h3.pm-notifying:hover {
+  border-color: #0F0 !important;
+  background: #FFF url("http://orig00.deviantart.net/71cd/f/2009/350/0/f/sleeping_glaceon_by_lionheartcartoon.gif") no-repeat !important;
+  background-position: 225px -8px !important;
+  color: #F9C !important;
+  text-shadow: 0px 0px 2px #000 !important;
+  font-style: italic !important;
+}
+
+.pm-window-kokonoesan .challenge {
+  background: url("http://orig11.deviantart.net/2a05/f/2009/187/e/4/glaceon_cursor_by_lionheartcartoon.gif") !important;
+  color: #000 !important;
+  border-color: #0F0 !important;
+}
+
+.pm-window-kokonoesan .challenge .select, .pm-window-kokonoesan .challenge .buttonbar button {
+  background: #F63 !important;
+  border-color: #0F0 !important;
+  color: #000 !important;
+  text-shadow: 0px -1px 0px #BF5664 !important;
+}
+
+.pm-window-kokonoesan .challenge .select:hover, .pm-window-kokonoesan .challenge .buttonbar button:hover {
+  background: #F9D !important;
+  border-color: #0F0 !important;
+} 
+
+.pm-window-kokonoesan .challenge .select:disabled {
+  background: rgba(255, 51, 0, 0.6) !important;
+  border-color: #000 !important;
+}
+
+.pm-window-kokonoesan .challenge .teamselect:disabled strong {
+  color: #F9D !important;
+  text-shadow: none !important;
 }
 
 .pm-window-wando h3 {
