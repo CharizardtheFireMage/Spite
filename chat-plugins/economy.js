@@ -6,7 +6,7 @@ let path = require('path');
 let shop = [
 	['Symbol', 'Buys a custom symbol to go infront of name and puts you at top of userlist. (Temporary until restart, symbols that could cause offense or impersonate staff will result in it being denied.)', 5],
 	['Fix', 'Buys the ability to alter your current custom avatar or trainer card. (don\'t buy if you have neither)', 10],
-	['League Room', 'Purchases a room at a reduced rate for use with a League.  A roster must be supplied with at least 5 members for this room.', 15],
+	['League Room', 'Purchases a room at a reduced rate for use with a League.  A roster must be supplied with at least 5 members for this room.', 10],
 	['Userlist Icon Upgrade', 'Purchases an userlist icon for another room of your choice. (may take some time to process)', 25],
 	['Draft League Room', 'Purchases a room at a reduced rate for use for a draft league.  A roster must be supplied with at least 5 members for this room.', 25],
 	['Custom Avatar', 'Buys an custom avatar to be applied to your name (You supply. Images larger than 80x80 may not show correctly)', 35],
