@@ -12,7 +12,7 @@ let rewardcentre = [
 	['3x PSGO', 'Buys 3 PSGO packs. (PM an Admin immediately after purchase.)', 2500],
 	['Casino Icon', 'Buy a custom icon that can be applied to the Casino room. You must take into account that the provided image should be 32 x 32', 5000],
 	['PSGO Booster Box', 'Buys 24 PSGO packs. (PM an Admin immediately after purchase.)', 15000],
-	['Bot Badge', 'Buys a badge to show you are botting.', 15000],
+	['Base Set', 'Buys a base set to add to the PSGO collection as well as your showcase', 15000],
 	
 
 ];
